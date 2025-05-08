@@ -55,6 +55,7 @@ O foco está na criação de uma interface intuitiva e funcional para cadastro e
 
 ## 📁 Estrutura do Projeto
 
+```text
 src/
 ├── app/
 │ ├── pages/
@@ -66,7 +67,7 @@ src/
 │
 ├── assets/ # Pasta para recursos estáticos
 └── theme/ # Estilos globais do projeto
-
+```
 ---
 
 ## 🧪 Como Executar
