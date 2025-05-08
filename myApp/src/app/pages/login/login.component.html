@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Entrar</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Usuário</ion-label>
+          <ion-input type="text" [(ngModel)]="usuario" name="usuario"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" [(ngModel)]="senha" name="senha"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" (click)="entrar()" (keyup.enter)="entrar()" tabindex="0">Entrar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

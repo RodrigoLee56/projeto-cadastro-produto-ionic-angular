@@ -1,0 +1,16 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular/standalone"
+  ],
+  "cSpell.words": [
+    "Credenciais",
+    "entrar",
+    "inválidas",
+    "lista",
+    "produtos",
+    "senha",
+    "sucedido",
+    "usuario"
+  ]
+}

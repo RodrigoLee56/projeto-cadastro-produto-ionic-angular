@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/novo-produto">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- Lista de Produtos -->
+  <div *ngIf="produtos.length > 0; else semProdutos">
+    <div class="produto-item" *ngFor="let p of produtos">
+      <div class="produto-detalhes">
+        <p class="produto-nome">{{ p.nome }}</p>
+        <p class="produto-preco">R$ {{ p.preco }}</p>
+        <p class="produto-descricao">{{ p.descricao }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensagem quando não há produtos -->
+  <ng-template #semProdutos>
+    <div class="no-products">
+      <p>Nenhum produto cadastrado.</p>
+    </div>
+  </ng-template>
+</ion-content>
