@@ -12,7 +12,7 @@
   </ion-fab>
 
   <!-- Lista de Produtos -->
-  <div *ngIf="produtos.length > 0; else semProdutos">
+  <div *ngIf="produtos.length > 0; else semProdutos" class="produtos-lista">
     <div class="produto-item" *ngFor="let p of produtos">
       <div class="produto-detalhes">
         <p class="produto-nome">{{ p.nome }}</p>

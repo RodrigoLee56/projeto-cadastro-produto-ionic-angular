@@ -5,14 +5,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-.produto-imagem {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
 .produto-detalhes {
   flex-grow: 1;
 }
@@ -21,6 +13,11 @@
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+}
+
+.produto-nome:hover {
+  cursor: pointer;
+  color: sandybrown;
 }
 
 .produto-preco {
@@ -38,4 +35,12 @@
   text-align: center;
   padding: 20px;
   color: #888;
+}
+
+.produtos-lista {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 20px;
 }
